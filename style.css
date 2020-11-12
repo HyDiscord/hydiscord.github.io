@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400');
+body {
+	margin: 0;
+	background: #222;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 800;
+}
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.container2 {
+	width: 95%;
+	margin: 0 auto;
+}
+
+header {
+  background: #55d6aa;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  padding: 10px 0;
+}
+
+nav[role="main"] {
+  float: left;
+}
+
+nav[role="right"] {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+
+  position: relative;
+}
+
+nav a {
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 100ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+button {
+  font-family: 'Lato', sans-serif;
+  border: 1px solid white;
+  background-color: #222;
+  border-radius: 8px;
+  padding: 15px 32px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  margin: 0 auto;
+  display: block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: #646464;
+  cursor: pointer;
+}
+
+h1 {
+  font-family: 'Lato', sans-serif;
+  color: white;
+  padding-top: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h2 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  size: 25px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
